@@ -1,0 +1,111 @@
+.container{
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+  color:var(--whitish);
+}
+
+.logo{
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.nav_bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark);
+  padding: .5rem;
+  border-radius: 2.5rem;
+  gap: .5rem;
+  position: relative;
+}
+.nav_title{
+  display: grid;
+  place-items: center;
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  font-size: .8rem;
+}
+
+.nav_title:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.small_container{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 310px;
+  height: 310px;
+  background: linear-gradient(310deg, rgba(40,44,81,1) 50%, rgba(21,25,50,1) 75%); 
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow) 50px 50px 100px 20px ,var(--light) -40px -40px 100px 60px;
+}
+.clock_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark);
+  border-radius: 50%;
+  width: 275px;
+  height: 275px;
+  position: relative;
+}
+
+.clock{
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  font-weight: 800;
+}
+
+.clock_container:hover{
+  cursor: pointer;
+}
+
+.pause{
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  margin-left: .5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.configsBtn,.resetBtn {
+  all:unset;
+  font-size: 2rem;
+}
+
+.configsBtn > i, .resetBtn > i{
+  width: 100%;
+}
+
+.configsBtn:hover, .resetBtn:hover{
+  cursor: pointer;
+}
+

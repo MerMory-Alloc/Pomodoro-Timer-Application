@@ -1,0 +1,208 @@
+.mymodal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--Dark);
+    background: #fff;
+    overflow: visible;
+    border-radius: 1.5rem;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+    width: 475px;
+  }
+  
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+
+  .fav_setting_container{
+    padding: 1.5rem 0;
+  }
+
+  .modal_title,.fav_setting_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--whitish);
+  }
+
+  .fav_setting_container:last-child {
+    border-bottom: none;
+  }
+
+  .modal_title h3{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .modal_title button{
+    all:unset;
+    font-size: 1.2rem;
+  }
+
+  .modal_title button:hover {
+    cursor: pointer;
+  }
+
+  .modal_content h4 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: .9rem;
+  }
+
+  .modal_content , .modal_title{
+    padding: 1.5rem 2.5rem;
+    
+  }
+
+  .timInMinCont {
+    border-bottom: 1px solid var(--whitish);
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  .timesInmin {
+    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: .7rem;
+    gap: 1rem;
+    color: #ABAAAF;
+    font-weight: 700;
+  }
+  
+  .timesInmin .input-wrapper {
+    position: relative;
+  }
+  
+  .timesInmin input {
+    background-color: #EEF1FA;
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    color: var(--Dark);
+    padding: .7rem;
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: .5rem;
+  }
+  
+  .timesInmin .button-wrapper {
+    position: absolute;
+    top: 62%;
+    right: .7rem;
+    transform: translateY(-60%);
+  }
+  
+  .timesInmin .increment-button,
+  .timesInmin .decrement-button {
+    all: unset;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14px;
+  }
+  
+  .timesInmin .increment-button i,
+  .timesInmin .decrement-button i {
+    font-size: 1.2rem;
+    color: #ABAAAF;
+  }
+  
+  .fonts, .colors {
+    display: flex;
+    flex-direction: row;
+  }
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #EEF1FA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:focus {
+    outline: none;
+  }
+  
+
+  .fonts input::before {
+    content: "Aa";
+    font-weight: 700;
+    font-size: .9rem;
+  }
+
+  .fonts input:checked {
+    background-color: var(--Dark);
+    color: white;
+  }
+
+  .colors input::before {
+    content: "✓";
+    font-weight: 800;
+    font-size: .9rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+  }
+
+  .colors input:checked::before {
+    transform: scale(1);
+  }
+
+  .acceptBtn {
+    all:unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    background-color: var(--Redish);
+    color: #fff;
+    font-weight: 800;
+    width: 25%;
+    position: absolute;
+    bottom: -25px;
+    right: 160px;
+  }
+  
+  .acceptBtn:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+
+  

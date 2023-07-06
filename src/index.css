@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --Dark-blue: #1e2140;
+  --Redish :#f87070;
+  --whitish: #dae3ff;
+  --Dark : #151932;
+  --Blue :#282c51;
+  --shadow:#121831;
+  --light:#272a57;
+  --greenish : #70f6f9;
+  --violish : #d982f7;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--Dark-blue);
+  display: grid;
+  place-items: center;
+  color: var(--whitish);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
